@@ -1,14 +1,11 @@
 #include <iostream>
-
 using namespace std;
-float multiplication(float santi)
-{
-cout << santi * 2.54 << endl;
-return 0;
+
+float multiplication(float dum) {
+	return dum * 2.54;
 }
 int main() {
-float santi;
-cin >> santi;
-multiplication(santi);
-return 0;
+	float dum;
+	cin >> dum;
+	cout << multiplication(dum) << endl;
 }
