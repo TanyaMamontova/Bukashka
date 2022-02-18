@@ -1,1 +1,11 @@
+#include <iostream>
 
+int main()
+{
+    using namespace std;
+    float dlina_1, dlina_2;
+    cin >> dlina_1;
+    cin >> dlina_2;
+    cout << 2 * dlina_1 + 2 * dlina_2 << endl;
+    return 0;
+}
