@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+float multiplication(float santi)
+{
+cout << santi * 2.54 << endl;
+return 0;
+}
+int main() {
+float santi;
+cin >> santi;
+multiplication(santi);
+return 0;
+}
