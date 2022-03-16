@@ -1,6 +1,6 @@
 #include <iostream>
 
-using namespace std;
+using namespace std; // функция, отслеживающая какие числа введены, увеличивая переменную schetchik, если было введено хотя бы одно число  < 0
 int polozhitchislo (int x) {
  int schetchik = 0;
   if (x < 0) {
