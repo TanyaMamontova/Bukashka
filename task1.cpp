@@ -49,10 +49,7 @@ int main()
     cin >> n;
     int array[n];
     for (int i = 0; i < n; i++)
-     {
         cin >> array[i];
-        cout << ' ';
-    }
     int maxi; 
     maxx (array, n);
     maxi = maxx (array, n);
