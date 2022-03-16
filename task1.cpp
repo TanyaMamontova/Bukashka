@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 int minn (int array[], int n) // функция для подсчета минимального элемента массива
 {
     int i;
