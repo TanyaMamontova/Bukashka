@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
@@ -18,7 +19,7 @@ int main() {
 			if (array[i][j] > 0)
 				s += array[i][j];
 		}
-
+	
 	cout << "Сумма положительных элементов массива = " << s << endl;
 	return 0;
 }
