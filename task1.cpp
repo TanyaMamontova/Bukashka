@@ -2,90 +2,93 @@
 
 using namespace std;
 
-int Konn (char x, int y)
+int Kon (char a, int b)
 {
-    char a1; // переменная для нахождения буквы в таблице
-    int b1;  // переменная для указания строки возможного хода 
+    char p; // переменная для нахождения буквы на доске
+    int st;  // переменная для указания строки возможного хода 
     int n = 1; //переменная для движения по строкам доски
-    while (n <= 8) // цикл для работы на каждой строке доски
+    while (n <= 8) // цикл движения по доске
     {
-        a1 = x;
-        b1 = n;
-        if ((y - n) == 2) 
+        p = a;
+        st = n;
+        if ((b - n) == 2) 
             {
-                if (x >= 'y')  //условие для нахождения на доске всегда
+                if (a >= 'b')  //условие нахождения на доске
                 {
-                    a1 = x - 1;
-                    cout << a1 << b1 << endl;
+                    p = a - 1;
+                    cout << p << st << endl;
                 } 
-                if (x <= 'g') 
+                if (a <= 'g') 
                 {
-                    a1 = x + 1;
-                    cout << a1 << b1 << endl;
+                    p = a + 1;
+                    cout << p << st << endl;
                 }
             }
             
-        if ((y - n) == -2) 
+        if ((b - n) == -2) 
             {
-                if (x >= 'y')
+                if (a >= 'b')
                 {
-                    a1 = x - 1;
-                    cout << a1 << b1 << endl;
+                    p = a - 1;
+                    cout << p << st << endl;
                 } 
                 
-                if (x <= 'g')
+                if (a <= 'g')
                 {
-                    a1 = x + 1;
-                    cout << a1 << b1 << endl;
+                    p = a + 1;
+                    cout << p << st << endl;
                 }
             
             }
             
-        if ((y - n) == 1)
+        if ((b - n) == 1)
             {
-                if (x >= 'c')
+                if (a >= 'c')
                 {
-                    a1 = x - 2;
-                    cout << a1 << b1 << endl;
+                    p = a - 2;
+                    cout << p << st << endl;
                 } 
-                if (x <= 'f')
+                if (a <= 'f')
                 {
-                    a1 = x + 2;
-                    cout << a1 << b1 << endl;
+                    p = a + 2;
+                    cout << p << st << endl;
                 }
             }
             
-        if ((y - n) == -1) 
+        if ((b - n) == -1) 
             {
-                if (x >= 'c')
+                if (a >= 'c')
                 {
-                    a1 = x - 2;
-                    cout << a1 << b1 << endl;
+                    p = a - 2;
+                    cout << p << st << endl;
                 } 
-                if (x <= 'f')
+                if (a <= 'f')
                 {
                     {
-                        a1 = x + 2;
-                        cout << a1 << b1 << endl;
+                        p = a + 2;
+                        cout << p << st << endl;
                     }
                 }
                
             }
+        
         n++;
     }
-    return x;
+    
+    return a;
 }
 
 int main()
 {
-    char x;
-    int y;
-    cout << "Введите расположения коня ";
-    cin >> x; 
-    cin >> y;
+    char a;
+    int b;
+    cout << "Введите расположение коня: ";
+    cin >> a; 
+    cin >> b;
     cout << endl;
-    cout << "Возможные ходы";
+    cout << "Возможные ходы коня: ";
     cout << endl;
-    Konn (x, y);
+    Kon (a, b);
+
     return 0;
 }
