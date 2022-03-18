@@ -2,65 +2,41 @@
 
 using namespace std;
 
-int minn (int array[], int n) // функция для подсчета минимального элемента массива
-{
-    int i;
-    int min;
-    min = array[0];
-    for (i = 1; i < n; i++)
-    {
-        if (array[i] <= min)
-            min = array[i];
-    }
-    return min;
-}
 
-int maxx (int array[], int n) // функция для подсчета максимального элемента массива
-{
-    int i;
-    int max;
-    max = array[0];
-    for (i = 1; i < n; i++)
-    {
-        if (array[i] >= max)
-            max = array[i];
-    }
-    return max;
-}
-
-int perestanovka (int array[], int n, int x, int y) // функция, переставляющая элементы местами
-
-{   
-    int i;
-    for (i = 0; i < n; i++)
-    {
-        if (array[i] == x)
-            array[i] = y;
-        else 
-            if (array[i] == y)
-            array[i] = x;
-    }
-    return 0;
-}
-
-int main()
-{
+int main(){
     int n;
+    cout << "Ввведите количество элементов массива:"<< endl;
     cin >> n;
-    int array[n];
+    int array [n];
+    cout << "Введи элементы массива:" << endl;
     for (int i = 0; i < n; i++)
         cin >> array[i];
-    int maxi; 
-    maxx (array, n);
-    maxi = maxx (array, n);
-    int mini;
-    minn (array, n);
-    mini = minn (array, n);
-    cout << "Максимальный элемент массива: "<< maxi << endl;
-    cout << "Минимальный элемент массива: "<< mini << endl;
-    perestanovka (array, n, maxi, mini);
-    int i;
-    for (i = 0; i < n; i++)
+        
+    int max = array [0]; 
+    int min = array [0]; 
+    int kmin; // переменная для запоминания номера минимального элемента массива
+    int kmax; // переменная для запоминания номера максимального элемента массива
+    
+    for (int i = 0; i < n; i++){
+        if (array [i] >= max){
+            max = array[i];
+            kmax = i;
+        }
+        if (array[i] <= min){
+            min = array[i];
+            kmin = i;
+        }
+    }
+    cout << "Максимальное значение массива: " << max << endl;
+    cout << "Минимальное значение массива: "<< min << endl;
+    
+    int change;
+    change = array[kmin];
+    array[kmin] = array[kmax];
+    array[kmax] = change;
+    
+    cout << endl << "Измененный массив:" << endl;
+    for (int i = 0; i < n; i++)
         cout << array[i] << ' ';
     return 0;
 }
