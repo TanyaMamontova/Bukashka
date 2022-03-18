@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 int main(){
     int n;
     cout << "Ввведите количество элементов массива:"<< endl;
@@ -28,7 +27,7 @@ int main(){
         }
     }
     cout << "Максимальное значение массива: " << max << endl;
-    cout << "Минимальное значение массива: "<< min << endl;
+    cout << "Минимальное значение массива: " << min << endl;
     
     int change;
     change = array[kmin];
