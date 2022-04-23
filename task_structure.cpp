@@ -7,7 +7,7 @@ struct drob {
     int znamen;
 };
 
-void sokr ( int& x, int& y) { //Функция, для нахождения НОД двух чисел
+void sokr (int& x, int& y) { //Функция, для нахождения НОД двух чисел
 int a, b, c;
 a = abs(x);
 b = abs(y);
