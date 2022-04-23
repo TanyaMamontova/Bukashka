@@ -27,12 +27,13 @@ int main() {
     cout << "Введите знаменатель дроби: ";
     cin >> X.znamen;
     sokr (X.chisl, X.znamen);
-    if (X.chisl == 0 || X.znamen == 0)
+    if (X.chisl == 0 || X.znamen == 0) {
     cout << "Некорректная дробь!";
-    else
-    if (X.chisl < 0 && X.znamen < 0 || X.chisl > 0 && X.znamen > 0)
-    cout << "Дробь после сокращения: " << abs(X.chisl) << "/" << abs(X.znamen);
-    else
-    cout << "Дробь после сокращения: " << "-" << abs(X.chisl) << "/" << abs(X.znamen); 
-    cout << endl;
+}
+else {
+    cout << "Дробь после сокращения: ";
+    if (X.chisl > 0 && X.znamen < 0 || X.chisl < 0 && X.znamen > 0) {
+        cout << "-";
+    }
+    cout << abs(X.chisl) << "/" << abs(X.znamen);
 }
