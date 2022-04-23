@@ -36,4 +36,5 @@ else {
         cout << "-";
     }
     cout << abs(X.chisl) << "/" << abs(X.znamen);
+  }
 }
