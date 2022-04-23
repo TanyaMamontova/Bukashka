@@ -33,7 +33,6 @@ int main() {
     if (X.chisl < 0 && X.znamen < 0 || X.chisl > 0 && X.znamen > 0)
     cout << "Дробь после сокращения: " << abs(X.chisl) << "/" << abs(X.znamen);
     else
-    if (X.chisl < 0 && X.znamen > 0 || X.chisl > 0 && X.znamen < 0)
     cout << "Дробь после сокращения: " << "-" << abs(X.chisl) << "/" << abs(X.znamen); 
     cout << endl;
 }
