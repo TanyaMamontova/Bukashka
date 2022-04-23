@@ -20,8 +20,7 @@ x /= a;
 y /= a;
 }
  
-int main()
-{
+int main() {
   drob X;
     cout << "Введите числитель дроби: ";
     cin >> X.chisl;
