@@ -29,8 +29,8 @@ int main() {
     sokr (X);
     if (X.chisl == 0  X.znamen == 0) {
     cout << "Некорректная дробь!";
-}
-else {
+    }
+    else {
     cout << "Дробь после сокращения: ";
     if (X.chisl > 0 && X.znamen < 0  X.chisl < 0 && X.znamen > 0) {
         cout << "-";
