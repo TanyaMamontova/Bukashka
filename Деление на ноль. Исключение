@@ -17,7 +17,6 @@ int main () {
    try {
       cout << "Результат деления: " << division(x, y) << endl;
     } 
-
    catch (const char* iskl) {
     cout << "Исключение. Причина: " << iskl << endl;
    }
