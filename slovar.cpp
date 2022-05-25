@@ -3,7 +3,9 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+
 using namespace std;
+
 struct Wek {
     string str;
     int n;
@@ -12,6 +14,7 @@ struct Wek {
         return this->n > ob.n;
     }
 };
+
 int main() {
     fstream open("input.txt", ios::in | ios::binary);
     vector<Wek> arr;
